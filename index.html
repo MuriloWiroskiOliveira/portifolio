@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Murilo Wiroski Oliveira, estudante de Ciência da Computação interessado em desenvolvimento e dados.">
+  <title>Murilo Wiroski | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir para o início">MW<span>.</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
+      <a class="nav-contact" href="#contato">Contato <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> DISPONÍVEL PARA OPORTUNIDADES DE ESTÁGIO</p>
+        <h1>Transformando<br>curiosidade em <span class="accent">código.</span></h1>
+        <p class="hero-description">Olá, sou <strong>Murilo Wiroski Oliveira</strong>. Estudante de Ciência da Computação, interessado em desenvolvimento de software, tecnologia e análise de dados.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Ver projetos <span>↓</span></a>
+          <a class="button button-secondary" href="#contato">Falar comigo <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span>GRAVATAÍ, RS — BRASIL</span><span>CIÊNCIA DA COMPUTAÇÃO · 2º SEMESTRE</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Cartão visual com identificação profissional">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-card-top"><span></span><span></span><span></span><small>murilo.dev</small></div>
+          <div class="code-lines">
+            <p><span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
+            <p class="indent"><span class="code-green">name</span>: <span class="code-yellow">"Murilo"</span>,</p>
+            <p class="indent"><span class="code-green">focus</span>: [</p>
+            <p class="indent2"><span class="code-yellow">"software"</span>,</p>
+            <p class="indent2"><span class="code-yellow">"data"</span></p>
+            <p class="indent">],</p>
+            <p class="indent"><span class="code-green">learning</span>: <span class="code-purple">true</span></p>
+            <p>};</p>
+          </div>
+          <div class="code-card-footer"><span class="status-dot"></span> sempre aprendendo</div>
+        </div>
+        <div class="floating-tag tag-python">Python</div>
+        <div class="floating-tag tag-java">Java</div>
+        <div class="floating-tag tag-sql">SQL</div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="sobre">
+      <div class="section-heading"><p class="eyebrow">01 / SOBRE MIM</p><h2>Conhecimento se constrói<br><span class="muted">fazendo.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead">Estou no início da minha jornada em tecnologia e gosto de entender como as coisas funcionam — da lógica por trás de um programa à forma como os dados podem gerar informação.</p>
+        <div class="about-detail"><p>Atualmente curso Ciência da Computação na UniRitter e concluí minha formação em Análise de Dados pela EBAC. Busco uma oportunidade de estágio para desenvolver minhas habilidades, aprender com profissionais da área e contribuir com projetos reais.</p><p class="small-note">Meu portfólio está em construção. Novos projetos serão adicionados conforme forem desenvolvidos.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="habilidades">
+      <div class="section-heading"><p class="eyebrow">02 / HABILIDADES</p><h2>Ferramentas que estou<br><span class="muted">desenvolvendo.</span></h2></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-number">01</span><h3>Programação</h3><p>Fundamentos de programação e desenvolvimento.</p><div class="chips"><span>Python</span><span>Java</span><span>HTML</span></div></article>
+        <article class="skill-card"><span class="skill-number">02</span><h3>Dados</h3><p>Exploração, organização e análise de dados.</p><div class="chips"><span>SQL</span><span>Pandas</span><span>EDA</span></div></article>
+        <article class="skill-card"><span class="skill-number">03</span><h3>Ferramentas</h3><p>Ferramentas de apoio ao desenvolvimento e análise.</p><div class="chips"><span>Git</span><span>GitHub</span><span>Looker Studio</span></div></article>
+      </div>
+      <p class="disclaimer">As habilidades listadas representam tecnologias e conteúdos estudados. O nível de domínio varia conforme a ferramenta.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="projetos">
+        <div class="section-heading projects-heading">
+            <div>
+                <p class="eyebrow">03 / PORTFÓLIO</p>
+                <h2>Projetos <span class="muted">publicados.</span></h2>
+            </div>
+
+            <span class="project-count" id="project-count">
+                CARREGANDO...
+            </span>
+        </div>
+
+        <div id="github-projects" class="projects-grid">
+            <div class="projects-loading">
+                <div class="loading-icon">{ }</div>
+                <p>Carregando projetos do GitHub...</p>
+            </div>
+        </div>
+
+        <div class="projects-footer">
+            <a
+                href="https://github.com/MuriloWiroskiOliveira"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+            >
+                Ver todos os projetos no GitHub ↗
+            </a>
+        </div>
+    </section>
+
+    <section class="section-wrap section-block" id="formacao">
+      <div class="section-heading"><p class="eyebrow">04 / FORMAÇÃO</p><h2>Minha trajetória<br><span class="muted">até aqui.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-date">EM ANDAMENTO · 2º SEMESTRE</span><div><h3>Ciência da Computação</h3><p>UniRitter</p><span class="timeline-type">Graduação</span></div></article>
+        <article class="timeline-item"><span class="timeline-date">CONCLUÍDO</span><div><h3>Análise de Dados</h3><p>EBAC</p><span class="timeline-type">Curso de formação</span></div></article>
+        <article class="timeline-item"><span class="timeline-date">CONCLUÍDO</span><div><h3>Aprendizagem Profissional</h3><p>SENAC</p><span class="timeline-type">Certificado de conclusão</span></div></article>
+      </div>
+      <div class="language-row"><span>IDIOMAS</span><strong>Português — Nativo</strong><strong>Inglês — Avançado</strong></div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="section-wrap contact-inner"><p class="eyebrow">05 / CONTATO</p><h2>Vamos construir<br>algo <span class="accent">juntos?</span></h2><p>Estou aberto a conversar sobre oportunidades de estágio, tecnologia e projetos.</p><div class="contact-actions"><a class="button button-primary" href="mailto:SEU_EMAIL_AQUI">Enviar e-mail ↗</a><a class="button button-secondary" href="https://github.com/MuriloWiroskiOliveira" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p class="email-reminder">m.wiroskioliveira@gmail.com</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#inicio">MW<span>.</span></a><span>© <span id="year"></span> Murilo Wiroski Oliveira</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+</body>
+</html>
